@@ -35,6 +35,7 @@ jobs:
       - name: npm install and test
         run: |
           npm install
+	  npm run migrate up
           npm run test
         env:
           CI: true
